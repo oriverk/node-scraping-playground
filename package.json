@@ -1,0 +1,8 @@
+{
+  "name": "node-scraping-playground",
+  "version": "1.0.0",
+  "description": "scraping playground with node libraries such as peppeteer",
+  "main": "index.js",
+  "author": "oriverk <oriveryk@gmail.com>",
+  "license": "MIT"
+}
