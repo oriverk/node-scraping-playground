@@ -8,7 +8,13 @@
   "scripts": {
     "lint": "eslint ./src/**/*.ts",
     "fix": "eslint --fix ./src/**/*.ts",
+    "prepare": "husky install",
     "pptr:screenshot": "ts-node src/pptr/screenshot/index.ts"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "axios": "^0.21.4",
@@ -24,6 +30,8 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "prettier": "^2.4.1",
     "typescript": "^4.4.3"
   }
